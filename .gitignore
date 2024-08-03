@@ -1,0 +1,15 @@
+.env
+dist/
+node_modules/
+ 
+ The  .env  file is used to store environment variables. The  dist/  directory is used to store the compiled TypeScript code. The  node_modules/  directory is used to store the installed packages. 
+ Step 2: Install the Required Packages 
+ In this step, you will install the required packages. 
+ Run the following command: 
+ npm install express mongoose dotenv
+ 
+ The  express  package is used to create the REST API. The  mongoose  package is used to interact with the MongoDB database. The  dotenv  package is used to load environment variables from the  .env  file. 
+ Step 3: Create the Configuration File 
+ In this step, you will create the configuration file. 
+ Create a new file named  .env  in the root directory and add the following code: 
+ PORT=3000
