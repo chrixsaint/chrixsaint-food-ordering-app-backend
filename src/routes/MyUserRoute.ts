@@ -7,7 +7,6 @@ const router = express.Router();
 
 // /api/my/user
 router.get("/", jwtCheck, jwtParse, MyUserController.getCurrentUser);
-
 router.post("/", jwtCheck, MyUserController.createCurrentUser);
 router.put(
   "/",
@@ -16,4 +15,5 @@ router.put(
   validateMyUserRequest,
   MyUserController.updateCurrentUser
 );
+
 export default router;

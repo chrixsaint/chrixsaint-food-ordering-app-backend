@@ -19,7 +19,6 @@ cloudinary.config({
 });
 
 const app = express();
-const port = 3000;
 
 app.use(cors());
 
@@ -36,6 +35,6 @@ app.use("/api/my/restaurant", myRestaurantRoute);
 app.use("/api/restaurant", restaurantRoute);
 app.use("/api/order", orderRoute);
 
-app.listen(port, () => {
-  console.log("Server is running on http://localhost:3000");
+app.listen(3000, () => {
+  console.log("server started on localhost:3000");
 });
